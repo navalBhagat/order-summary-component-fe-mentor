@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+html { 
+    width: 100%;
+    height: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    color:  hsl(223, 47%, 23%);
+}
+
+body { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#root { 
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;   
+    background-size: 100% 50%;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card { 
+    background-color: white;
+    height: 53rem;
+    width: 36rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0rem 1rem 3rem hsl(224, 23%, 55%);
+}
+
+.image { 
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.info { 
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.title { 
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.description { 
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: hsl(224, 23%, 55%);
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    margin-top: 0;
+    line-height: 2rem;
+}
+
+.pricing { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    height: 7rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon-and-detail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+}
+
+.details { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    gap: 0.5rem
+}
+
+.music-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.details-title { 
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.price { 
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.change-action {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+
+.change-action:hover { 
+    cursor: pointer;
+    color: hsl(245, 54%, 62%);
+    text-decoration: none;
+}
+
+.payment { 
+    margin-top: 1rem;
+    border: 0;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 80%;
+    height: 4rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: large; 
+    box-shadow: 0rem 1rem 1rem #dad7f9;
+}
+
+.payment:hover { 
+    cursor: pointer;
+    background-color: hsl(245, 54%, 62%);
+}
+
+.cancel-action { 
+    margin-top: 2rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: large;
+}
+
+.cancel-action:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    .content { 
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-size: 100% 30%
+    }
+    .card { 
+        width: 22rem;
+        height: 35rem;
+    }
+    .title {
+        font-size: large;
+        margin-top: 0rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        line-height: 1.5rem;
+    }
+
+    .pricing {
+        height: 5rem;
+    }
+
+    .icon-and-detail {
+        width: 18rem;
+    }
+
+    .details {
+        gap: 0rem;
+    }
+
+    .details-title {
+        font-size: medium;
+    }
+
+    .price {
+        font-size: medium;
+    }
+
+    .change-action { 
+        font-size: 0.8rem;
+    }
+
+    .payment {
+        font-size: medium;
+        height: 3rem;
+    }
+
+    .cancel-action {
+        font-size: 1rem;
+    }
+}
